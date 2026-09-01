@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #171411;
+  --espresso: #211b17;
+  --deep: #120f0d;
+  --ivory: #f2ede4;
+  --paper: #e8e0d5;
+  --muted: #8f877d;
+  --gold: #b99a68;
+  --gold-soft: #d5c29e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ivory);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--ivory);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: var(--gold);
+  color: #111;
+}
+
+.serif {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.site-shell {
+  overflow: hidden;
+}
+
+.editorial-line {
+  height: 1px;
+  background: rgba(23, 20, 17, 0.14);
+}
+
+.dark-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.mini-label {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .mini-label {
+    font-size: 9px;
+    letter-spacing: 0.22em;
+  }
+}
